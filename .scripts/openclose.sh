@@ -1,0 +1,5 @@
+openclose() {
+    "$@" &
+    disown
+    exit
+}
