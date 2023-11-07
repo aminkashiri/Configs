@@ -114,7 +114,7 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9.Telegram"
 set $ws10 "10"
 
 # switch to workspace
@@ -241,3 +241,10 @@ exec_always xinput set-prop 13 349 1
 # activate natural scrolling (down and up are reversed when scrolling)
 exec_always xinput set-prop 13 357 1
 
+exec_always picom
+
+# Screenshot key
+#interactive screenshot by pressing printscreen
+bindsym Print exec gnome-screenshot -i 
+#crop-area screenshot by pressing Mod + printscreen
+bindsym $mod+Print exec gnome-screenshot -a
