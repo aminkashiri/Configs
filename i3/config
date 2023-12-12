@@ -254,9 +254,14 @@ exec_always picom
 
 # Screenshot key
 #interactive screenshot by pressing printscreen
-#bindsym Print exec gnome-screenshot -i 
 bindsym Print exec flameshot full --clipboard --path ~/Pictures/Screenshots/
 
 #crop-area screenshot by pressing ctrl/mode + printscreen
-#bindsym $mod+Print exec gnome-screenshot -a
 bindsym Ctrl+Print exec flameshot gui
+
+
+
+# move focused window between monitors
+bindsym $mod+Shift+greater move container to output right
+bindsym $mod+Shift+less move container to output left
+
