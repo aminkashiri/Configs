@@ -1,0 +1,16 @@
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Super|Shift"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+opacity = 0.9
+
+[window.padding]
+x = 0
+y = 0
