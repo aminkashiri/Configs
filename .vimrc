@@ -15,6 +15,7 @@ set number
 " with '10j' or '10k'
 set relativenumber
 
+
 " a line below cursor line
 set cursorline
 
@@ -29,7 +30,10 @@ set tabstop=4
 set expandtab
 
 " do not wrap lines. Allow long lines to extend as far as the line goes.
-set nowrap
+set wrap
+" Have j and k navigate visual lines rather than logical ones. This is very use full when combined with set wrap
+nmap j gj
+nmap k gk
 
 " While searching though a file incrementally highlight matching characters as you type.
 set incsearch
@@ -70,4 +74,7 @@ nmap <Leader>v :e $MYVIMRC
 
 
 set guicursor=
+
+" Yank to system clipboard
+set clipboard=unnamedplus
 
