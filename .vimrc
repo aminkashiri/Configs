@@ -78,3 +78,7 @@ set guicursor=
 " Yank to system clipboard
 set clipboard=unnamedplus
 
+
+" So that I can use commands such as di$, ci$ and so on. 
+onoremap <silent> i$ :<c-u>normal! T$vt$<cr>
+vnoremap i$ T$ot$
